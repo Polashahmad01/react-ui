@@ -1,17 +1,17 @@
 import { Outlet } from "react-router";
 
+import AppNavbar from "../components/AppNavbar";
+
 export default function DefaultAppLayout() {
   return (
-    <div>
-      <header>
-        <h1>My App</h1>
-      </header>
+    <>
+      <AppNavbar />
       <main>
         <Outlet />
       </main>
       <footer>
         <p>© 2025 My App</p>
       </footer>
-    </div>
+    </>
   );
 }
