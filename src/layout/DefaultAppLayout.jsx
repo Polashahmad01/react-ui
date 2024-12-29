@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 
 import AppNavbar from "../components/AppNavbar";
+import AppFooter from "../components/AppFooter";
 
 export default function DefaultAppLayout() {
   return (
@@ -9,9 +10,7 @@ export default function DefaultAppLayout() {
       <main>
         <Outlet />
       </main>
-      <footer>
-        <p>© 2025 My App</p>
-      </footer>
+      <AppFooter />
     </>
   );
 }
